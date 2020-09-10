@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <div class="message">
+        <img src="imgs/logo.jpg" alt="" class="logo">
+        <p>姓名：倪佳依</p>
+        <p>学院：网络传播学院</p>
+        <p>班级：传播学1801班</p>
+        <p>学号：201830503040039</p>
+        <p>身份证号：339005199910224327</p>
+        <p>请假开始时间：<input type="text" value="2020-06-29 15:41"></p>
+        <p>请假结束时间：<input type="text" value="2020-06-29 21:00"></p>
+        <p>出校时间：</p>
+        <p>返校时间：</p>
+        <img src="imgs/photo.jpg" alt="" class="photo">
+    </div>
+
+    <div class="con">
+        <div class="title allow">学生请假出入校 <span>（允许出校）</span></div>
+        <div class="detail">
+            <img src="imgs/01.png" alt="" class="pic">
+            <img src="imgs/01-red.png" alt="" class="red-pic">
+            <div class="info">
+                <p>已具备出校权限</p>
+                <a href="#" class="btn">点击出校</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script>
+    $(".btn").click(function () {
+        $(this).css("background-color","red").html("申请返校");
+        $(".pic").hide();
+        $(".red-pic").show()
+    })
+</script>
+
+</body>
+</html>
